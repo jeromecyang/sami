@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import styled from 'styled-components';
+import Button from '@material-ui/core/Button';
+import Card from './Card';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Sami: Jerome Yang's New Homepage</h1>
-        </header>
-        <p className="App-intro">
-          travel | culture & language | map & visualization
-        </p>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <div>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+      <Card />
+    </div>
+  );
 }
 
 export default App;
